@@ -17,6 +17,6 @@ h2
     padding: 1em;
 }
 
-nav{
-    color: #0000009e;
+a:link {
+  color: #0000009e;
 }
