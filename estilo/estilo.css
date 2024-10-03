@@ -2,21 +2,71 @@
 
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background-color: #3c9996;
+    background-color: #8DD3D0;
 }
 
 header
 {
     text-align: center;
-    background-color: #32bcb7;
-    color: #0000009e;
+    background-color: #0CDFBC;
+    color: #363636;
 }
 
-h2 
-{
-    padding: 1em;
+h1 a {
+    text-decoration: none;
 }
 
-a:link {
-  color: #0000009e;
+h1 a:visited {
+    color: inherit;
 }
+
+nav a:visited {
+    color: inherit;
+}
+
+nav a:hover {
+    color: #00058F;
+}
+
+a {
+  color: inherit;
+}
+
+body > p:first-of-type {
+    font-size: smaller;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em; 
+}
+
+h3 {
+    font-size: 1.5em; 
+}
+
+h4 {
+    font-size: 1em;
+}
+
+ul{
+    list-style-type: square;
+}
+
+/*Se implementó counter ya que las listas no tienen un estilo 
+cardinal, verificado mediante la herramienta can i use*/
+ul ol{
+    counter-reset: cardinal 0;
+    list-style-type: none;
+}
+
+ul ol li::before{
+    counter-increment: cardinal;
+    content: counter(cardinal)"º ";
+}
+
+
+
