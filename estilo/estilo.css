@@ -68,5 +68,31 @@ ul ol li::before{
     content: counter(cardinal)"º ";
 }
 
+dt {
+    font-weight: bold;
+}
 
+/* Contenedor de la tabla para garantizar el diseño adaptable */
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    background-color:#5d61df;
+  }
 
+td {
+    text-align: center;
+    background-color:#a4a7f6f8;
+}
+
+video {
+    width:100%;
+    height:auto;
+}
+
+@media screen and (max-width: 768px){
+    body > p:first-of-type {
+        display: none;
+    }
+}
